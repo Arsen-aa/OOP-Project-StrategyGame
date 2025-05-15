@@ -123,6 +123,7 @@ public class GameGUI extends JFrame {
      * @param args command-line arguments (not used)
      */
     public static void main(String[] args) {
+        // Runs the GUI on its own thread so that it remains responsive even when the program is doing intensive calculations in the background.
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 new GameGUI();
